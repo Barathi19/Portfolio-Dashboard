@@ -58,7 +58,7 @@ export async function GET() {
     { fetchedAt: new Date().toISOString(), data },
     {
       headers: {
-        "Cache-Control": "s-maxage=15, stale-while-revalidate",
+        "Cache-Control": "s-maxage=60, stale-while-revalidate=59",
       },
     }
   );
