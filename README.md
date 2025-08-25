@@ -1,109 +1,89 @@
-Portfolio Dashboard
+📊 Portfolio Dashboard
 
-A stock portfolio dashboard built with Next.js, TypeScript, and Recharts.
-The app parses portfolio data (from JSON/Excel), fetches live market data using Yahoo Finance API, and visualizes portfolio performance with tables and charts.
-
+A responsive stock portfolio dashboard built with Next.js, TypeScript, and Recharts. This app parses portfolio data (from JSON/Excel), fetches live market data via the Yahoo Finance API, and visualizes portfolio performance using interactive charts and tables.
 
 Portfolio Overview
 
-Total Investment
-
-Current Value
-
-Net Gain/Loss (with trend indicators)
+  - Total Investment
+  - Current Value
+  - Net Gain/Loss (with up/down trend indicators)
 
 Holdings Table
 
-Stock name, Purchase Price, Quantity, Investment
-
-Current Market Price (CMP), Present Value
-
-Gain/Loss, Portfolio Weight %, Exchange, P/E Ratio, Earnings
+ - Stock Name, Purchase Price, Quantity, Investment
+ - Current Market Price (CMP), Present Value
+ - Gain/Loss, Portfolio Weight (%)
+ - Exchange, P/E Ratio, Earnings (EPS)
 
 Charts & Analytics
 
-Pie Chart: Investment distribution by sector
+ - Pie Chart: Investment distribution by sector
+ - Bar Chart: Sector-wise gain/loss
 
-Bar Chart: Sector-wise gain/loss
+Auto-Refresh
 
-Auto-refresh
-
-Fetches fresh market data every 15 seconds (stale-while-revalidate enabled)
+ - Live market data refreshes every 15 seconds
+ - Uses stale-while-revalidate caching for performance
 
 Responsive UI
 
-Mobile & desktop friendly
-
-Clean dashboard design with Tailwind CSS
+ - Fully optimized for both mobile and desktop
+ - Clean dashboard design with Tailwind CSS
 
 Tech Stack
 
-Frontend: Next.js 15, React 19, TypeScript
+Layer	Tech
 
-UI Styling: Tailwind CSS, React Icons
+ * Frontend	- Next.js 15, React 19, TypeScript
+ * Styling	- Tailwind CSS, React Icons
+ * Charts   -	Recharts (Pie, Bar)
+ * Data     -	Yahoo Finance API (yahoo-finance2)
+ * State	  - React Hooks, custom utilities
 
-Charts: Recharts (Pie, Bar)
+📁 Project Structure
 
-Backend/Data Fetching: Yahoo Finance API (yahoo-finance2)
+ - /components      →   Reusable UI components (Cards, Table, Loader, etc.)
+ - /sections        →   Dashboard sections (Overview, PortfolioTable, PortfolioCharts)
+ - /data            →   Portfolio data (stock.json)
+ - /app             →   Next.js app directory (pages, API routes)
+ - /utils           →   Helper functions (e.g., formatCurrency)
 
-State & Utils: React hooks, custom utils for formatting
-
-Project Structure
-/components      → Shared components (Cards, Loader, Error, Table)
-/sections        → Dashboard sections (Overview, PortfolioTable, SectorChart)
-/data            → stock.json (portfolio data)
-/app             → Next.js pages & API routes
-/utils           → Helpers (formatCurrency, etc.)
-
-Setup & Run
-
-Clone repo
-
+⚙️ Setup & Run
+1. Clone the repository
 git clone https://github.com/Barathi19/Portfolio-Dashboard.git
 cd Portfolio-Dashboard
 
-
-Install dependencies
-
+2. Install dependencies
 npm install
 
-
-Run development server
-
+3. Start development server
 npm run dev
 
 
-App will be available at http://localhost:3000
+App will be available at: http://localhost:3000
 
-Build for production
-
+4. Build for production
 npm run build
 npm start
 
 Data Flow
-
-Portfolio Data Source
-
-Stocks & sectors loaded from /data/stock.json
-
-API Fetch
-
-/api/portfolio fetches live CMP, EPS, PE via Yahoo Finance API
-
-Merges with portfolio JSON
-
-UI Render
-
-Overview Cards → Summary
-
-Table → Stock-wise details
-
-Charts → Sector-wise distribution & performance
+Portfolio JSON (/data/stock.json)
+       ↓
+API Route (/api/portfolio) fetches:
+  - CMP (Current Market Price)
+  - EPS (Earnings Per Share)
+  - P/E Ratio
+       ↓
+Data Merged
+       ↓
+UI Render:
+  → Overview Cards
+  → Holdings Table
+  → Sector Charts
 
 Notes
 
-Deployment: Supports Vercel (Next.js native)
-
-Caching: Uses s-maxage=15, stale-while-revalidate for better performance
-
-Limitations: Some stock symbols may not resolve correctly from Yahoo
+- Deployment: Optimized for Vercel
+ (Next.js native support)
+- Caching: Uses s-maxage=15 with stale-while-revalidate
+- Limitations: Some stock symbols may not resolve correctly via Yahoo Finance API
