@@ -3,6 +3,8 @@ import yahooFinance from "yahoo-finance2";
 import stocksData from "@/data/stock.json";
 import { IStock, IStockDetail, IStockHashMap } from "@/interface";
 
+export const revalidate = 15; // cache for 15 seconds
+
 export async function GET() {
   let stockJson: IStockHashMap = {};
   let totalInvestment = 0;
@@ -48,7 +50,7 @@ export async function GET() {
       presentValue,
       exchange,
       portfolio: (investment / totalInvestment) * 100,
-      gainOrLoss: (presentValue - investment),
+      gainOrLoss: presentValue - investment,
     };
   });
 
