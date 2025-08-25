@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Portfolio Dashboard
 
-## Getting Started
+A stock portfolio dashboard built with Next.js, TypeScript, and Recharts.
+The app parses portfolio data (from JSON/Excel), fetches live market data using Yahoo Finance API, and visualizes portfolio performance with tables and charts.
 
-First, run the development server:
 
-```bash
+Portfolio Overview
+
+Total Investment
+
+Current Value
+
+Net Gain/Loss (with trend indicators)
+
+Holdings Table
+
+Stock name, Purchase Price, Quantity, Investment
+
+Current Market Price (CMP), Present Value
+
+Gain/Loss, Portfolio Weight %, Exchange, P/E Ratio, Earnings
+
+Charts & Analytics
+
+Pie Chart: Investment distribution by sector
+
+Bar Chart: Sector-wise gain/loss
+
+Auto-refresh
+
+Fetches fresh market data every 15 seconds (stale-while-revalidate enabled)
+
+Responsive UI
+
+Mobile & desktop friendly
+
+Clean dashboard design with Tailwind CSS
+
+Tech Stack
+
+Frontend: Next.js 15, React 19, TypeScript
+
+UI Styling: Tailwind CSS, React Icons
+
+Charts: Recharts (Pie, Bar)
+
+Backend/Data Fetching: Yahoo Finance API (yahoo-finance2)
+
+State & Utils: React hooks, custom utils for formatting
+
+Project Structure
+/components      → Shared components (Cards, Loader, Error, Table)
+/sections        → Dashboard sections (Overview, PortfolioTable, SectorChart)
+/data            → stock.json (portfolio data)
+/app             → Next.js pages & API routes
+/utils           → Helpers (formatCurrency, etc.)
+
+Setup & Run
+
+Clone repo
+
+git clone https://github.com/Barathi19/Portfolio-Dashboard.git
+cd Portfolio-Dashboard
+
+
+Install dependencies
+
+npm install
+
+
+Run development server
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+App will be available at http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Build for production
 
-## Learn More
+npm run build
+npm start
 
-To learn more about Next.js, take a look at the following resources:
+Data Flow
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Portfolio Data Source
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Stocks & sectors loaded from /data/stock.json
 
-## Deploy on Vercel
+API Fetch
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+/api/portfolio fetches live CMP, EPS, PE via Yahoo Finance API
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Merges with portfolio JSON
+
+UI Render
+
+Overview Cards → Summary
+
+Table → Stock-wise details
+
+Charts → Sector-wise distribution & performance
+
+Notes
+
+Deployment: Supports Vercel (Next.js native)
+
+Caching: Uses s-maxage=15, stale-while-revalidate for better performance
+
+Limitations: Some stock symbols may not resolve correctly from Yahoo

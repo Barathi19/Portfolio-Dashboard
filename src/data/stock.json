@@ -1,0 +1,186 @@
+[
+  {
+    "company": "HDFC Bank",
+    "symbol": "HDFCBANK.NS",
+    "sector": "Financial Sector",
+    "purchasePrice": 1490,
+    "quantity": 50,
+    "investment": 74500
+  },
+  {
+    "company": "Bajaj Finance",
+    "symbol": "BAJFINANCE.NS",
+    "sector": "Financial Sector",
+    "purchasePrice": 6466,
+    "quantity": 15,
+    "investment": 96990
+  },
+  {
+    "company": "ICICI Bank",
+    "symbol": "ICICIBANK.NS",
+    "sector": "Financial Sector",
+    "purchasePrice": 780,
+    "quantity": 84,
+    "investment": 655520
+  },
+  {
+    "company": "Apple India",
+    "symbol": "AAPL",
+    "sector": "Tech Sector",
+    "purchasePrice": 1151,
+    "quantity": 50,
+    "investment": 57550
+  },
+  {
+    "company": "LTI Mindtree",
+    "symbol": "LTIM.NS",
+    "sector": "Tech Sector",
+    "purchasePrice": 4775,
+    "quantity": 16,
+    "investment": 76400
+  },
+  {
+    "company": "KPIT Tech",
+    "symbol": "KPITTECH.NS",
+    "sector": "Tech Sector",
+    "purchasePrice": 672,
+    "quantity": 61,
+    "investment": 40992
+  },
+  {
+    "company": "Tata Tech",
+    "symbol": "TATATECH.NS",
+    "sector": "Tech Sector",
+    "purchasePrice": 1072,
+    "quantity": 63,
+    "investment": 67536
+  },
+  {
+    "company": "BLS E-Services",
+    "symbol": "BLS.NS",
+    "sector": "Tech Sector",
+    "purchasePrice": 232,
+    "quantity": 191,
+    "investment": 44312
+  },
+  {
+    "company": "Tanla",
+    "symbol": "TANLA.NS",
+    "sector": "Tech Sector",
+    "purchasePrice": 1134,
+    "quantity": 45,
+    "investment": 51030
+  },
+  {
+    "company": "Dmart",
+    "symbol": "DMART.NS",
+    "sector": "Consumer",
+    "purchasePrice": 3777,
+    "quantity": 27,
+    "investment": 101979
+  },
+  {
+    "company": "Tata Consumer",
+    "symbol": "TATACONSUM.NS",
+    "sector": "Consumer",
+    "purchasePrice": 845,
+    "quantity": 90,
+    "investment": 76050
+  },
+  {
+    "company": "Pidilite",
+    "symbol": "PIDILITIND.NS",
+    "sector": "Consumer",
+    "purchasePrice": 2376,
+    "quantity": 36,
+    "investment": 85536
+  },
+  {
+    "company": "Tata Power",
+    "symbol": "TATAPOWER.NS",
+    "sector": "Power",
+    "purchasePrice": 224,
+    "quantity": 225,
+    "investment": 50400
+  },
+  {
+    "company": "KPI Green",
+    "symbol": "KPIGREEN.NS",
+    "sector": "Power",
+    "purchasePrice": 875,
+    "quantity": 50,
+    "investment": 43750
+  },
+  {
+    "company": "Suzlon",
+    "symbol": "SUZLON.NS",
+    "sector": "Power",
+    "purchasePrice": 44,
+    "quantity": 450,
+    "investment": 19800
+  },
+  {
+    "company": "Hariom Pipes",
+    "symbol": "HARIOMPIPE.NS",
+    "sector": "Pipe Sector",
+    "purchasePrice": 580,
+    "quantity": 60,
+    "investment": 34800
+  },
+  {
+    "company": "Astral",
+    "symbol": "ASTRAL.NS",
+    "sector": "Pipe Sector",
+    "purchasePrice": 1517,
+    "quantity": 56,
+    "investment": 84952
+  },
+  {
+    "company": "Polycab",
+    "symbol": "POLYCAB.NS",
+    "sector": "Pipe Sector",
+    "purchasePrice": 2818,
+    "quantity": 28,
+    "investment": 78904
+  },
+  {
+    "company": "Clean Science",
+    "symbol": "CLEAN.NS",
+    "sector": "Others",
+    "purchasePrice": 1610,
+    "quantity": 32,
+    "investment": 51520
+  },
+  {
+    "company": "Deepak Nitrite",
+    "symbol": "DEEPAKNTR.NS",
+    "sector": "Others",
+    "purchasePrice": 2248,
+    "quantity": 27,
+    "investment": 60696
+  },
+  {
+    "company": "Fine Organic",
+    "symbol": "FINEORG.NS",
+    "sector": "Others",
+    "purchasePrice": 4284,
+    "quantity": 16,
+    "investment": 68544
+  },
+  {
+    "company": "Gravitia",
+    "symbol": "GRAVITA.NS",
+    "sector": "Others",
+    "purchasePrice": 2037,
+    "quantity": 8,
+    "investment": 16296
+  },
+  {
+    "company": "SBI Life",
+    "symbol": "SBILIFE.NS",
+    "sector": "Others",
+    "purchasePrice": 1197,
+    "quantity": 49,
+    "investment": 58653
+  }
+]
